@@ -9,6 +9,7 @@ import { isUserLoggedIn } from './action';
 import {useDispatch,useSelector}from 'react-redux'
 import Orders from './container/orders';
 import Products from './container/products';
+import Category from './container/Category';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
              <Route element={<Home/>} path='/' exact/>
              <Route element={<Products/>} path='/products' />
              <Route element={<Orders/>} path='/orders' />
+             <Route element={<Category/>} path='/category' />
           </Route>
           <Route exact path='/signin' element={<Signin/>}/>
             <Route exact path='/signup' element={<Signup/>}/>
